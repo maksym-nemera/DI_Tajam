@@ -1,56 +1,350 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
-  <head class="page__head">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-    <link rel="icon" href="./images/icons/Icon-cookie.png">
-    <script
-      type="module"
-      src="scripts/main.js"
-      defer
-    ></script>
-  </head>
-  <body class="page__body">
-    <header class="header">
-      <div class="container">
-        <a href="#">
-          <img
-            src="images/Logo.png"
-            alt="example Logo"
-          >
-        </a>
-
-        <h1>hello example</h1>
-      </div>
+    <title>TAJEM</title>
+    <link rel="icon" type="image/x-icon" href="img/Replace_with_your_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+    <div class="nav-wrapper nav__container">
+      <a href="index.html" class="brand-logo"><img class="header__img" src="img/tajam.png" alt=""></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">EXPERTISE</a></li>
+        <li><a href="#">TEAM</a></li>
+        <li><a href="#">WORKS</a></li>
+        <li><a href="#">PEOPLE SAY</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- mobile -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">EXPERTISE</a></li>
+        <li><a href="#">TEAM</a></li>
+        <li><a href="#">WORKS</a></li>
+        <li><a href="#">PEOPLE SAY</a></li>
+        <li><a href="#">CONTACT</a></li>
+  </ul>
+  <div class="aboutUS">
+    <div class="container">
+        <div class="row">
+            <div class="col m10 offset-m1">
+                <h1 class="aboutUS__header">We Are Awesome Creative Agency</h1>
+                <p class="aboutUS__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem <br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate <br>cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <button class="btn__primary">learn more</button>
+            </div>
+        </div>
+    </div>
+  </div>
     </header>
-
-    <nav class="page__menu menu" id="menu">
-      <div class="container">
-        nav
-      </div>
-    </nav>
-
-    <main>
-      <article>
-        <section class="container">
-          <div class="grid grid--tablet">
-            <div class="
-              grid__item-tablet--1-5
-              grid__item-desktop--1-5"
-            >
-              main
+    <main id="main">
+      <div class="story">
+        <div class="container">
+          <div class="row">
+            <div class="col m4">
+              <img src="img/Replace_with_your_logo.png" alt="" class="main__img">
+            </div>
+            <div class="col m8">
+              <h2 class="story__header">OUR STORY</h2>
+              <p class="story__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime praesentium earum similique culpa possimus eos sed odio nulla quasi, consequuntur expedita voluptates dolor. Voluptatem est doloremque perspiciatis eius odit.</p>
+              <p class="story__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime praesentium earum similique culpa possimus eos sed odio nulla quasi, consequuntur expedita voluptates dolor. Voluptatem est doloremque perspiciatis eius odit.</p>
+              <button class="btn__primary">Learn more</button>
             </div>
           </div>
-        </section>
-      </article>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        footer
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="story__video">
+        <a class="storry__video_link" href="#"><i class="fa-regular fa-circle-play"></i></a>
+        <p class="story__video__text">watch our story</p>
+      </div>
+      <div class="expertise">
+          <div class="container">
+            <div class="row">
+              <div class="col m6 offset-m3 expertise__box">
+                <h2 class="expertise__box_header">expertise</h2>
+                <p class="expertise__box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut?</p>
+              </div>      
+            </div>
+            <div class="row expertise__item_box">
+              <!-- 1 -->
+            <div class="col s12  m4 expertise__container">
+             <img src="img/pc.png" alt="" class="expertise__container_img">
+             <h2 class="expertise__container_header">WEB DESIGN & DEVELOPMENT</h2>
+             <p class="expertise__container_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+           </div>
+           <!-- 2 -->
+           <div class="col s12  m4 expertise__container">
+             <img src="img/PUT_YOUR_ICON_HERE (1).png" alt="" class="expertise__container_img">
+             <h2 class="expertise__container_header">BRANDING IDENTITY</h2>
+             <p class="expertise__container_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+           </div>
+             <!-- 3 -->  
+             <div class="col s12  m4 expertise__container">
+               <img src="img/PUT_YOUR_ICON_HERE (2).png" alt="" class="expertise__container_img">
+               <h2 class="expertise__container_header">MOBILE APP</h2>
+               <p class="expertise__container_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+             </div>
+            </div>
+            <div class="row">
+              <!-- 4 -->
+              <div class="col s12  m4 expertise__container">
+                <img src="img/PUT_YOUR_ICON_HERE (3).png" alt="" class="expertise__container_img">
+                <h2 class="expertise__container_header">SEARCH ENGINE OPTIMIZATION</h2>
+                <p class="expertise__container_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+              </div>
+              <!-- 5 -->
+              <div class="col s12  m4 expertise__container">
+                <img src="img/PUT_YOUR_ICON_HERE (4).png" alt="" class="expertise__container_img">
+                <h2 class="expertise__container_header">GAME DEVELOPMENT</h2>
+                <p class="expertise__container_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+              </div>
+              <!-- 6 -->
+              <div class="col s12 m4 expertise__container">
+                <img src="img/PUT_YOUR_ICON_HERE (5).png" alt="" class="expertise__container_img">
+                <h2 class="expertise__container_header">MADE WITH LOVE</h2>
+                <p class="expertise__container_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+              </div>
+            </div>   
+          </div>
+      </div>
+        <div class="team">
+          <div class="container">
+            <div class="row team__header_box">
+              <div class="col m6 offset-m3">
+                <h2 class="team__header">MEET OUR AMAZING TEAM</h2>
+                <p class="team__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+              </div>
+            </div>
+            <div class="row">
+              <!-- 1 -->
+              <div class="col s12 l3 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img  class="team__card_img" src="img/Card-img-1.png">
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card__content_header">SEMF UCUK</h5>
+                    <p class="card__content_text">CEO & FOUNDER</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="col s12 l3 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img  class="team__card_img" src="img/Card-img-1.png">
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card__content_header">SEMF UCUK</h5>
+                    <p class="card__content_text">CEO & FOUNDER</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="col s12 l3 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img  class="team__card_img" src="img/Card-img-1.png">
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card__content_header">JENG KOL</h5>
+                    <p class="card__content_text">DESIGNER</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="col s12 l3 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img  class="team__card_img" src="img/Card-img-1.png">
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card__content_header">PET ROMAK</h5>
+                    <p class="card__content_text">MARKETING</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team__info">
+              <div class="row">
+                <div class="col m6 offset-m3">
+                  <p class="team__info_text">Become part of our dream team, let’s join us ! </p>
+                  <button class="btn__primary">WE ARE HIRING</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+           <div class="container">
+            <div class="row gallery__center_container">
+              <div class="col m4">
+                <h2 class="gallery__header">
+                  OUR WORK
+                </h2>
+              </div>
+              <div class="col m4">
+                <a href="#" class="gallery__link">
+                  See All Project in dribbbl 
+                  <i class="large material-icons">
+                    chevron_right
+                  </i>
+                </a>
+              </div> 
+            </div>
+            <div class="row gallery__container no-margin">
+                 <!-- 1 -->
+            <div class="col m3 no-padding">
+              <img src="img/1.jpg" alt="" class="gallery__img materialboxed">
+            </div>
+            <!-- 2 -->
+            <div class="col m3 no-padding">
+              <img src="img/2.jpg" alt="" class="gallery__img materialboxed">
+            </div>
+            <!-- 3 -->
+            <div class="col m3 no-padding">
+              <img src="img/3.jpg" alt="" class="gallery__img materialboxed">
+            </div>
+            <!-- 4 -->
+            <div class="col m3 no-padding">
+              <img src="img/4.jpg" alt="" class="gallery__img materialboxed">
+            </div>           
+              </div>
+            <div class="row no-margin margin-top">
+              <!-- 5 -->
+              <div class="col m3 no-padding">
+                <img src="img/5.jpg" alt="" class="gallery__img materialboxed">
+              </div>
+              <!-- 6 -->
+              <div class="col m3 no-padding">
+                <img src="img/6.jpg" alt="" class="gallery__img materialboxed">
+              </div>
+              <!-- 7 -->
+              <div class="col m3 no-padding">
+                <img src="img/7.jpg" alt="" class="gallery__img materialboxed">
+              </div>
+              <!-- 8 -->
+              <div class="col m3  no-padding">
+                <img src="img/bg.png" alt="" class="gallery__img materialboxed">
+              </div>
+            </div>
+           </div>
+        </div>
+        <div class="slider__team">
+          <div class="container slider__team_container">
+            <div class="row">
+              <div class="col s12 m11 offset-m1">
+                <h2 class="slider__team_header">“</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m7 offset-m3">
+                <p class="slider__team_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="row">
+                <div class="col s12 m12">
+                  <div class="carousel">
+                    <a class="carousel-item" href="#"><img src="img/team1.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/team2.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/team3.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/team4.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/team5.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="" id="form">
+            <div class="container">
+              <div class="row">
+                <div class="col l4 m3">
+                  <h2 class="form__header">GIVE US A GOOD NEWS</h2>
+                  <input class="form__item" type="text" placeholder="Name">
+                  <input class="form__item" type="email" placeholder="Email">
+                  <input class="form__item" type="text" placeholder="Subject">
+                  <textarea id="message" name="message" rows="4" cols="50" placeholder="Your Massege"></textarea>
+                  <button class="btn__primary btn__submit">Submit</button>
+                </div>
+                <div class="col  s11 l3 m3 offset-l3 offset-m1 offset-s1">
+                  <h2 class="form__header">OUR HAPPY CLIENT</h2>
+                  <img src="img/Zara_Logo.svg.png" alt="" class="form__item_img">
+                  <img src="img/1280px-Barneys_New_York_Logo.svg.png" alt="" class="form__item_img">
+                  <img  class="form__item_img" src="img/Calvin_klein_logo.svg.png">
+                  <img  class="form__item_img" src="img/Converse_logo.svg.png">
+                  <img  class="form__item_img" src="img/1280px-Levi's_logo.svg.png">
+                </div>
+                <div class="col s11 m3 l1 offset-l1 col__padding offset-m1 offset-s1">
+                  <img src="img/Logo_of_Mango_(new).svg.png" alt="" class="form__item_img">
+                  <img src="img/1280px-Gucci_Logo.svg.png" alt="" class="form__item_img">
+                  <img  class="form__item_img" src="img/1280px-Logo_NIKE.svg.png">
+                  <img  class="form__item_img" src="img/Puma_Logo.svg.png">
+                  <img  class="form__item_img" src="img/Billabong.svg.png">
+                </div>
+              </div>
+            </div>
+        </form>
+        <footer class="page-footer" id="footer">
+        <div class="container footer__container">
+          <div class="row">
+            <div class="col l4 s12">
+            <img src="img/tajam.png" alt="" class="footer__logo">
+              <p class="footer__text text-lighten-4">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit.</p>
+            </div>
+            <div class="col l3 offset-l1 s12">
+              <h5 class="white-text footer__header">OUR STUDIO</h5>
+              <ul class="footer__links">
+                <li><a class="white-text text-lighten-3" href="#!"> <i class="material-icons">location_on</i>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                  11480 - Indonesia</a></li>
+                <li><a class="white-text text-lighten-3" href="tel:622122243333"> <i class="material-icons">local_phone</i>(+62) 21-2224 3333</a></li>
+              </ul>
+            </div>
+            <div class="col l4  s12">
+              <h5 class="white-text footer__header">STAY IN TOUCH</h5>
+              <div class="form">
+                <input class="footer__input" type="text" placeholder="Subscribe our newsletter">
+                <button class="footer__submit_btn"><i class="material-icons">send</i></button>
+              </div>
+              <div class="footer__massegers">
+                <a href="" class="footer__massegers_item"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="footer__massegers_item"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="footer__massegers_item"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="" class="footer__massegers_item"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="footer__massegers_item"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="" class="footer__massegers_item"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          <a class="footer__secont_link" href="#">HELP</a>
+          <a  class="footer__secont_link"  href="#">TERMS & CONDITION</a>
+          <a class="footer__secont_link"  href="#">PRIVECY</a>
+          <p class="grey-text text-lighten-4 right" href="#!">Copyright © 2023 - Tajem Creative</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
